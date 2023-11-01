@@ -12,5 +12,11 @@ const StyledButton = styled.button`
   font-size: medium;
   cursor: pointer;
   transition: 0ms.5s all ease-out;
+  margin: 5px;
 `;
 export default StyledButton;
+
+export const FancyButton = styled(StyledButton)`
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+  border: none;
+`;
