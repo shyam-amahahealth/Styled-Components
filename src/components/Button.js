@@ -25,3 +25,12 @@ export const FancyButton = styled(StyledButton)`
   background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
   border: none;
 `;
+
+export const SubmitButton = styled(StyledButton).attrs((props) => ({
+  type: "submit",
+}))`
+  box-shadow: 0 4px #999;
+  background-color: ${(props) =>
+    props.variant === "outline" ? "#fff" : "#4caf50"};
+  transform: translateY(4px);
+`;

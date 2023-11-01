@@ -1,12 +1,13 @@
 import "./App.css";
-import StyledButton, { FancyButton } from "./components/Button";
+import StyledButton, { FancyButton, SubmitButton } from "./components/Button";
 
 function App() {
   return (
     <div className="App">
-      <StyledButton variant="outline">Styled Button</StyledButton>
+      <StyledButton type="submit" variant="outline">Styled Button</StyledButton>
       <StyledButton>Styled Button</StyledButton>
       <FancyButton as="a">Styled Button</FancyButton>
+      <SubmitButton >Styled Button</SubmitButton>
     </div>
   );
 }
