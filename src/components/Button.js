@@ -13,6 +13,11 @@ const StyledButton = styled.button`
   cursor: pointer;
   transition: 0ms.5s all ease-out;
   margin: 5px;
+  &:hover {
+    background-color: ${(props) =>
+      props.variant === "outline" ? "#4caf50" : " #fff"};
+    color: ${(props) => (props.variant === "outline" ? "#fff" : "#4caf50")};
+  }
 `;
 export default StyledButton;
 
