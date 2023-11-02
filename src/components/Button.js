@@ -34,3 +34,9 @@ export const SubmitButton = styled(StyledButton).attrs((props) => ({
     props.variant === "outline" ? "#fff" : "#4caf50"};
   transform: translateY(4px);
 `;
+
+export const DarkButton = styled(StyledButton)`
+  border: 2px solid ${(props) => props.theme.dark.primary};
+  background-color: ${(props) => props.theme.dark.primary};
+  color: ${(props) => props.theme.dark.text};
+`;
